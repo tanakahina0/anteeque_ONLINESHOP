@@ -1,3 +1,9 @@
+// memo:カートやお気に入りボタンの挙動を追加する
+// memo:ログインログアウト、ユーザー登録もできるようにしたい
+// memo:サイト全体がゆっくり動くようにしたい
+// memo:アコーディオンメニューの挙動なおす
+// memo:パンくずリストの遷移先がそのカテゴリのみ表示にしたい(商品一覧を修正しないとダメかも？)
+
 // 商品詳細情報
 const PRODUCT_DB = {
   "china_dress": {
@@ -273,6 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 関連アイテム生成
+  // memo:同一カテゴリというより、好みに近いものや同シリーズなどで出せるようになおす
   const relatedContainer = document.getElementById('js-related-items');
   if (relatedContainer) {
     // DB全体から、条件に合う商品を探して配列に
