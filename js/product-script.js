@@ -25,7 +25,7 @@ const CATEGORY_DATA = {
         products: [
             { id: "mantle_set", img: "./img/Cardinal-Youth-Mantle-set.png", name: "カーディナル・ユース・マントセット", price: "¥9,800" },
             { id: "cross_beret", img: "./img/holy-cross-beret.png", name: "ホーリーベレー帽", price: "¥2,800" },
-            { id: "scarlet_mantle", img: "./img/scarlet-hood-mantle.png", name: "スカーレット・フードマントセット", price: "¥2,800" }
+            { id: "scarlet_mantle", img: "./img/scarlet-hood-mantle.png", name: "スカーレット・フードマントセット", price: "¥13,000" }
         ]
     },
     others: {
@@ -145,4 +145,5 @@ document.addEventListener('DOMContentLoaded', () => {
         input.addEventListener('change', filterProducts);
     });
     priceSelect.addEventListener('change', filterProducts);
+
 });
