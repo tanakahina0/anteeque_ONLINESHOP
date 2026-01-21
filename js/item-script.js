@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!product) {
     // 商品が見つからない場合はアラートを出してトップへ
     alert("商品が見つかりません。");
-    window.location.href = "top.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const catName = categoryNames[product.category] || "ITEM";
 
     breadcrumbs.innerHTML = `
-          <a href="top.html">HOME</a> &gt; 
+          <a href="index.html">HOME</a> &gt; 
           <a href="product.html">${catName}</a> &gt; 
           ${product.name}
       `;
@@ -257,4 +257,5 @@ function updateQty(n) {
 }
 document.querySelectorAll('.accordion-header').forEach(h => {
   h.addEventListener('click', () => h.parentElement.classList.toggle('active'));
+
 });
