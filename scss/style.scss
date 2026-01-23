@@ -131,8 +131,8 @@ header {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 720px; /* PCでの高さ */
-  background-color: #1a1512; /* 画像が足りない部分の背景色（bodyと同じ色に設定） */
+  height: 720px;
+  background-color: #1a1512;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,19 +477,19 @@ header {
   }
 
   .youtube-section .youtube-container {
-    padding: 20px; /* スマホでは内側の余白を少し減らす */
+    padding: 20px;
   
     .youtube-flex {
       gap: 20px;
-      flex-direction: column; /* 【追加】スマホでは縦並びにする */
+      flex-direction: column;
 
       .video-wrapper {
-        width: 100%;     /* 【追加】横幅いっぱいに広げる */
-        min-width: auto; /* 【追加】300px制限を解除して縮めるようにする */
+        width: 100%;
+        min-width: auto;
       }
 
       .youtube-text {
-        width: 100%; /* 【追加】テキストエリアも横幅いっぱいにする */
+        width: 100%;
         
         h3 {
           font-size: 1rem;
